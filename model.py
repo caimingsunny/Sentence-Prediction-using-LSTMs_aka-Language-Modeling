@@ -5,15 +5,15 @@ Created on Wed Sep 18 16:23:04 2019
 @author: danish
 """
 
-from keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.text import Tokenizer
 import numpy as np
-from keras.utils import to_categorical
-from keras.models import Sequential
-from keras.layers import Dense, LSTM, Embedding
+from tensorflow.keras.utils import to_categorical
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, LSTM, Embedding
 from pickle import dump,load
-from keras.callbacks import ModelCheckpoint
-from keras import optimizers
-from keras.models import load_model
+from tensorflow.keras.callbacks import ModelCheckpoint
+from tensorflow.keras import optimizers
+from tensorflow.keras.models import load_model
 
 
 
