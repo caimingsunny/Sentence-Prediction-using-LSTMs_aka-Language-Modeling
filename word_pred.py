@@ -31,6 +31,6 @@ while True:
     if seed_text.lower() == '--exit':
         break
     else:
-        out = gen_text(model, tokenizer, seq_len=seq_len, seed_text=seed_text, num_gen_words=5)
+        out = gen_text(model, tokenizer, seq_len=seq_len, seed_text=seed_text, num_gen_words=input('Numbers of words:'))
         print('Output: '+seed_text+' '+out)
         
