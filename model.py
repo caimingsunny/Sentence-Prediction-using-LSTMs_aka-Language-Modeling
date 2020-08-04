@@ -79,7 +79,8 @@ def create_model(vocabulary_size, seq_len):
     return model
 
 model = create_model(vocabulary_size+1,seq_len)
-path = './checkpoints/word_pred_Model4.h5'
+path = './word_pred_Model4.h5'
+# path = './checkpoints/word_pred_Model4.h5'
 checkpoint = ModelCheckpoint(path, monitor='loss', verbose=1, save_best_only=True, mode='min')
 model.fit(train_inputs,train_targets,batch_size=128,epochs=500,verbose=1,callbacks=[checkpoint])
 model.save('word_pred_Model4.h5')
