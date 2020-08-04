@@ -22,7 +22,7 @@ def read_file(filepath):
 		str_text = f.read()
 	return str_text
 
-text = read_file('EU-AU-Description-19-9-2019_qtr1.txt')
+text = read_file('generating.txt')
 tokens = text.split(" ")
 tokens.pop(0)
 
