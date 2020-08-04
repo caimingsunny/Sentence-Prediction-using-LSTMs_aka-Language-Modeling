@@ -22,7 +22,7 @@ def read_file(filepath):
 		str_text = f.read()
 	return str_text
 
-text = read_file('generating.txt')
+text = read_file('wsj.txt')
 tokens = text.split(" ")
 tokens.pop(0)
 
